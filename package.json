@@ -1,0 +1,15 @@
+{
+  "name": "qizlar-akademiyasi-candy-crash",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Phaser Candy Crush — reklamasiz self-host (Qizlar Akademiyasi)",
+  "scripts": {
+    "dev": "serve -l 3000 .",
+    "start": "serve -l 3000 .",
+    "mirror": "node scripts/mirror-gamemonetize.mjs",
+    "patch": "node scripts/patch-game-min.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

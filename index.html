@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Candy Crush · Qizlar Akademiyasi</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Candy Crush" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.01" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/icoCClm.png">
+    <meta name="game-slug" content="Mayas-Match" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+    <style>
+        #focusHelper {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            display: none;
+            background-color: #000000;
+            opacity: 0;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body onLoad="initGame()">
+    <div id="gameFontPreload">
+        <div style="font-family: ComicSansBold" class="fontPreload">.</div>
+    </div>
+    <div id="game-root"></div>
+    <div id="focusHelper"></div>
+    <script>
+        window.addEventListener("blur", function() {
+            document.getElementById('focusHelper').style['display'] = "block"
+        })
+        window.addEventListener("focus", function() {
+            document.getElementById('focusHelper').style['display'] = "none"
+        })
+    </script>
+    <script src="js/ad-stub.js"></script>
+    <script src="js/custom-phaser.min.js"></script>
+    <script src="js/game.min.js"></script>
+</body>
+
+</html>
